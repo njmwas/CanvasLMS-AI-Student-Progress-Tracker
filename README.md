@@ -1,3 +1,5 @@
 # Canvas LMS AI student progress tracker
-This tracker aims to assist instructors using the Canvas LMS to monitor and provide early intervensions to students enrolled in a specific course.
+This project aims to demostrate the use of an AI Agent created using LangChain to assist in providing comprehesive student progress reports, identify and provide early intervesions to struggling students within the Canvas LMS platform.
+
+
 
