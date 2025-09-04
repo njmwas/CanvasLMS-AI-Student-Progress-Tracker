@@ -1,5 +1,5 @@
+import os
 from dotenv import load_dotenv
-
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage
@@ -11,7 +11,7 @@ from helpers import get_system_prompt
 load_dotenv()
 
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile", 
+    model=os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile"), 
     temperature=0.3,
     max_tokens=5000
 )
@@ -35,7 +35,7 @@ def chain_with_mem():
     def get_chat_history():
         return mem.chat_memory.messages
     
-    return (
+    chain = (
         {
             "instruction": RunnablePassthrough(),
             "chat_history": lambda x: get_chat_history()
@@ -45,24 +45,19 @@ def chain_with_mem():
         | parser
     )
 
+    return chain
+
 chain = chain_with_mem()
 
-
-response = chain.invoke({"instruction": "Hello my agent"})
-mem.save_context({"instruction": "Hello my agent"}, {"output": response})
-print(response)
-
 try:
+    response = chain.invoke("Hello my agent")
+    mem.save_context({"instruction": "Hello my agent"}, {"output": response})
+    print(response)
+
     while True:
         instruction = input("")
-        print(instruction)
-        response = chain.invoke({
-            "instruction": instruction
-        })
-
+        response = chain.invoke(instruction)
         print(f"Agent: {response}")
-        print("""
-    Awaiting next instructions: -
-    """)
+
 except KeyboardInterrupt:
     print("Kwaheri")
