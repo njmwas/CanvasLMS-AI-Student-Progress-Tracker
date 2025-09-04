@@ -6,7 +6,7 @@ This project aims to demostrate the use of an AI Agent created using LangChain t
 
 ## How it works
 The student tracker is an AI agent that acts as a instructor assistant by providing course analysis.
-It analyzes Canvas LMS Data provided in [this file](agent_prompt.txt) or fetches the data from the API if the file does not exist. The process of fetching from API takes time before it start excepting prompts.
+It analyzes Canvas LMS Data provided in [this file](agent_prompt.txt) or fetches the data from the API if the file does not exist. The process of fetching from API takes time before it start eccepting prompts.
 Once it analyzes the data, it will start accepting prompts like:-
 * Analyze a specific Student10 performance
 * Identify students who are struggling
@@ -15,9 +15,10 @@ Once it analyzes the data, it will start accepting prompts like:-
 
 ## Prerequisites
 - Python 3.12
+- Access to Canvas LMS token
 
 ## Configurations
-- Add .env file with the following configurations
+Add .env file with the following configurations
 ```
 GROQ_API_KEY=<paste your GROQ API KEY here>
 CANVAS_API_BASEURL=<Specify your Canvas LMS instance>
@@ -30,6 +31,14 @@ LLM_MODEL=llama-3.3-70b-versatile
 2. Setup a virtual environment and activate ```python -m venv .venv && source .venv/bin/activate```
 3. Install dependancies ```pip install -r requirements.txt```
 4. Start the agent ```python -m agent```
+
+## Future development
+- Create a web frontend dashboard
+- Add more LangChain tools:-
+    - sending emails
+    - scheduling calendar sessions 
+    - search and recommend additional resources
+
 
 
 
