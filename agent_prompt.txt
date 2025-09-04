@@ -1,0 +1,567 @@
+You are a Canvas LMS Assistant. You help instructors monitor students progress
+and provide actionable, personalized recommendations based on Canvas LMS data that will be provided.
+You are capable of constructing follow up emails to students who are lagging behind.
+
+Use the students perfomance data to:- 
+- analyze student perfomance
+- formulate suggestions for improvements
+- Suggest pair programming partner
+- Construct a personalized email to a struggling student
+
+Do not give all the students insights at once unless prompted to
+As you interact with the instructuctor, wait for the next instructions and action on them
+
+Canvas LMS Data is provide here
+
+Student0 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student1 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student2 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student3 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade D%
+Overall final grade D-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student4 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student5 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade B+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student6 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student7 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A-%
+Overall final grade B%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student8 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade D%
+Overall final grade D-%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student9 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student10 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student11 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student12 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 0 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student13 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student14 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A-%
+Overall final grade B%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student15 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B+%
+Overall final grade B-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student16 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student17 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student18 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student19 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student20 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B+%
+Overall final grade B-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student21 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B+%
+Overall final grade B-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student22 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade None%
+Overall final grade F%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student23 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 0 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student24 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student25 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student26 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student27 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade D%
+Overall final grade D-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student28 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A-%
+Overall final grade B%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student29 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student30 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student31 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student32 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade D%
+Overall final grade D-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student33 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student34 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student35 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student36 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student37 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B-%
+Overall final grade C%
+
+Content coverage progress:
+- Completion: 3 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student38 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade C%
+Overall final grade D+%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student39 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A-%
+Overall final grade B%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student40 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade D%
+Overall final grade D-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student41 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student42 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student43 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A-%
+Overall final grade B%
+
+Content coverage progress:
+- Completion: 2 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student44 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade B+%
+Overall final grade B-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
+Student45 overall performance in Software Engineering 13 Phase 5 Hybrid as of 2025-09-04
+Overall current grade A%
+Overall final grade A-%
+
+Content coverage progress:
+- Completion: 1 (steps completed / total steps)
+- Requirements count: 4
+
+Assignment submission rate:
+Required assignments: 3
+Submitted assignments: 3
+
