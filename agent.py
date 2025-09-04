@@ -7,6 +7,7 @@ from langchain_core.runnables import RunnablePassthrough
 from langchain_core.output_parsers import StrOutputParser
 from langchain.memory import ConversationBufferMemory
 from helpers import get_system_prompt
+from rich import print
 
 load_dotenv()
 
@@ -55,12 +56,19 @@ chain = chain_with_mem()
 try:
     response = chain.invoke("Hello my agent")
     mem.save_context({"question": "Hello my agent"}, {"output": response})
-    print(response)
+    print(f"""
+{response}""")
 
     while True:
+        print("""
+Type your instructions below
+""")
         instruction = input("")
         response = chain.invoke(instruction)
-        print(f"Agent: {response}")
+        mem.save_context({"question": instruction}, {"output": response})
+        print(f"[bold green]Assistant:[/bold green] [blue]{response}[/blue]")
 
 except KeyboardInterrupt:
     print("Kwaheri")
+except Exception as e:
+    print(f"[bold red]Error:[/bold red] something went terribly wrong {e.message}")
