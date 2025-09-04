@@ -1,6 +1,6 @@
 from langchain.agents import tool
 from canvasapi.exceptions import ResourceDoesNotExist
-from helpers.canvas_data import courses, get_student_progress
+from helpers import get_student_progress
 from helpers.canvas import canvas
 from datetime import date
 
