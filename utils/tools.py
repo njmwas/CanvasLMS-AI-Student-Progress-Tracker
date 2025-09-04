@@ -38,8 +38,8 @@ def student_progress(course, students, student_id):
 
         output = f"""
 Student{index} overall performance in {course.name} as of {date.today().strftime("%Y-%m-%d")}
-Overall current grade {grades.get("current_grade", "N/A")}%
-Overall final grade {grades.get("final_grade", "N/A")}%
+Overall current grade {grades.get("current_grade", "N/A")}
+Overall final grade {grades.get("final_grade", "N/A")}
 """
         # Get content coverage progress
         user_progress = get_student_progress(course.id, student.id)

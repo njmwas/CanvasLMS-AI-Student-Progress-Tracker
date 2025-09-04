@@ -25,9 +25,8 @@ def get_system_prompt():
     
     from utils.tools import student_progress
     courses = canvas.get_courses(per_page=100)
-    
+
     required_api_keys={
-        "GROQ_API_KEY": "Enter groq API Key: ", 
         "CANVAS_API_BASEURL": "Enter CANVAS Instance URL: ", 
         "CANVAS_LMS_API_TOKEN": "Enter CANVAS LMS token: "
     }
@@ -35,6 +34,21 @@ def get_system_prompt():
     for keyname, description in required_api_keys.items():
         if not os.environ.get(keyname):
             os.environ[keyname] = getpass.getpass(description)
+    
+    system_prompt = f"""You are a Canvas LMS Assistant. You help instructors monitor students progress
+and provide actionable, personalized recommendations based on Canvas LMS data that will be provided.
+You are capable of constructing follow up emails to students who are lagging behind.
+
+Use the provided students perfomance data to:- 
+- formulate suggestions for improvements
+- Suggest pair programming partner
+- Construct a personalized email to a struggling student
+
+Do not give all the students insights at once unless prompted to
+As you interact with the instructuctor, wait for the next instructions and action on them
+
+Canvas LMS Data is provide here
+"""
             
     system_prompt_file = "agent_prompt.txt"
     if os.path.exists(system_prompt_file):
@@ -42,21 +56,6 @@ def get_system_prompt():
             system_prompt = f.read()
 
     else:
-        system_prompt = f"""
-    You are a Canvas LMS Assistant. You help instructors monitor students progress
-    and provide actionable, personalized recommendations based on Canvas LMS data that will be provided.
-    You are capable of constructing follow up emails to students who are lagging behind.
-
-    Use the students perfomance data to:- 
-    - formulate suggestions for improvements
-    - Suggest pair programming partner
-    - Construct a personalized email to a struggling student
-
-    Do not give all the students insights at once unless prompted to
-    As you interact with the instructuctor, wait for the next instructions and action on them
-
-    Canvas LMS Data is provide here
-    """
 
         print("Pick a course you want to analyze:- ")
         for index, course in enumerate(courses):
